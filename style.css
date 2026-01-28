@@ -1,0 +1,167 @@
+/* 基本重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 导航 */
+header {
+    background: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #2c3e50;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+}
+
+/* Hero区域 */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-text h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+/* 通用板块 */
+.section {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.section-title::after {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background: #2c3e50;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-title small {
+    display: block;
+    font-size: 0.9rem;
+    color: #999;
+    font-weight: normal;
+}
+
+.bg-light { background: #f9f9f9; }
+
+/* 会社概要表格 */
+.profile-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.profile-table th {
+    width: 30%;
+    text-align: left;
+    padding: 15px;
+    background: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+}
+
+.profile-table td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+/* 业务卡片 */
+.business-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.card h4 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+    border-left: 4px solid #2c3e50;
+    padding-left: 10px;
+}
+
+/* 联系方式 */
+.contact-box {
+    text-align: center;
+    background: #2c3e50;
+    color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.tel {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8rem;
+    color: #888;
+}
